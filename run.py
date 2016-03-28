@@ -14,7 +14,7 @@ def lambda_handler(event=None, context=None):
 
 if __name__ == "__main__":
 
-    vrs = ["PT_PROJECT_ID", 
+    vrs = ["PT_PROJECT_IDS", 
            "PT_RELEASE_NAME", 
            "PT_START_DATE", 
            "PT_TOKEN", 
