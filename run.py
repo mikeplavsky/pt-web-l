@@ -6,10 +6,11 @@ def lambda_handler(event=None, context=None):
     [os.putenv(k, event[k]) for k in event.keys()]
 
     res = subprocess.check_output(
-            [event["PT_WEB"]])
+            event["PT_WEB"],
+            stderr=subprocess.STDOUT,
+            shell=True)
 
     print res
-
     print "Done"
 
 if __name__ == "__main__":
